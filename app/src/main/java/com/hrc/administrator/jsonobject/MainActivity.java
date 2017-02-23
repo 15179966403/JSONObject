@@ -29,9 +29,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
         Button send = (Button) findViewById(R.id.btnSend);
         send.setOnClickListener(this);
-        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-
-        Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
     }
 
     private void sendRequestWithHttpClient(){
